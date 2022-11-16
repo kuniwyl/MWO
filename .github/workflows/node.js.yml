@@ -38,14 +38,10 @@ jobs:
     - name: Build
       run: |
         npm run build
-
-    - name: Login to heroku
-      run: |
-        heroku login
     
     - name: Add heroku remote
       run: |
-        heroku git:remote -a jw-mwo
+        git remote add heroku https://git.heroku.com/jw-mwo.git
         
     - name: Deploy Heroku
       run: |
