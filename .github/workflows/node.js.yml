@@ -45,7 +45,7 @@ jobs:
     
     - name: Add heroku remote
       run: |
-        heroku get:remote -a jw-mwo
+        heroku git:remote -a jw-mwo
         
     - name: Deploy Heroku
       run: |
