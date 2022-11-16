@@ -73,6 +73,7 @@ jobs:
       uses: actions/download-artifact@v3
       with:
         name: node-app
+        path: realease.zip
         
     - name: unzip artifact for deployment
       run: unzip release.zip
