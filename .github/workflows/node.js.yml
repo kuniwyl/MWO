@@ -37,7 +37,7 @@ jobs:
       
     - name: Build
       run: |
-        npm build
+        npm run build
 
     - name: Add heroku
       run: |
