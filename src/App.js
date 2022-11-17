@@ -9,9 +9,14 @@ const App = () => {
     setCounter(counter + 1);
   }
 
+  const del = () => {
+    setCounter(counter - 1);
+  }
+
   return (
     <div >
-      <button onClick={add}>Click Me!!!</button>
+      <button onClick={add}>Add</button>
+      <button onClick={del}>Del</button>
       <p id='counter'>{counter}</p>
     </div>
   );
