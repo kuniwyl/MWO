@@ -18,6 +18,7 @@ const App = () => {
       <button onClick={add}>Add</button>
       <button onClick={del}>Del</button>
       <p id='counter'>{counter}</p>
+      <NOWYAAPP />
     </div>
   );
 }
